@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6AC00DF0-EAE7-45E9-8E2E-0BAC77E5167C}</ProjectGuid>
+    <ProjectGuid>{348DF5AF-2730-4024-A141-47E76AD93473}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>SocketListener</RootNamespace>
-    <AssemblyName>SocketListener</AssemblyName>
+    <RootNamespace>UdpSocketClient</RootNamespace>
+    <AssemblyName>UdpSocketClient</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -48,12 +48,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Models\Models.csproj">
-      <Project>{50976739-958F-41DE-8293-5487A95B2317}</Project>
-      <Name>Models</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
