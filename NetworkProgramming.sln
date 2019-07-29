@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpListenerDemo", "TcpListe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpClientDemo", "TcpClientDemo\TcpClientDemo.csproj", "{33EB55B4-90BC-4A8B-B204-DEA1D801BEB7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpWebRequestDemo", "HttpWebRequestDemo\HttpWebRequestDemo.csproj", "{89AC3E73-DB3F-4A1D-84B1-0DF0F2EB2EB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpClientDemo", "HttpClientDemo\HttpClientDemo.csproj", "{1F442302-E790-47F3-B817-DF2B757EFE57}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,14 @@ Global
 		{33EB55B4-90BC-4A8B-B204-DEA1D801BEB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33EB55B4-90BC-4A8B-B204-DEA1D801BEB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33EB55B4-90BC-4A8B-B204-DEA1D801BEB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89AC3E73-DB3F-4A1D-84B1-0DF0F2EB2EB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89AC3E73-DB3F-4A1D-84B1-0DF0F2EB2EB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89AC3E73-DB3F-4A1D-84B1-0DF0F2EB2EB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89AC3E73-DB3F-4A1D-84B1-0DF0F2EB2EB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F442302-E790-47F3-B817-DF2B757EFE57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F442302-E790-47F3-B817-DF2B757EFE57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F442302-E790-47F3-B817-DF2B757EFE57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F442302-E790-47F3-B817-DF2B757EFE57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -10,12 +10,12 @@ using System.Threading.Tasks;
 
 namespace TcpClientDemo {
     class Program {
-        static async Task MainAsync(string[] args) {
+        static void MainAsync(string[] args) {
             var client = new TcpClient();
             var addr = IPAddress.Parse("10.2.25.75");
             var port = 27001;
-            Console.ReadLine();
-            await client.ConnectAsync(addr, port);
+          //  Console.ReadLine();
+            client.Connect(addr, port);
 
             var stream = client.GetStream();
             var reader = new StreamReader(stream);
@@ -28,8 +28,10 @@ namespace TcpClientDemo {
                     var wr = new StreamWriter(gzip);
                     wr.WriteLine(str);
                     wr.Flush();
+                    gzip.Close(); // [ <====== HERE ]
                     var bytes = ms.ToArray();
                     writer.Write(bytes.Length);
+                    writer.Flush();
                     writer.Write(bytes);
                     writer.Flush();
                 }
@@ -37,6 +39,6 @@ namespace TcpClientDemo {
             }
         }
 
-        static void Main(string[] args) => MainAsync(args).GetAwaiter().GetResult();
+        static void Main(string[] args) => MainAsync(args);
     }
 }
